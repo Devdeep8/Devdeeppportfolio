@@ -47,7 +47,7 @@ const IntroSection = () => {
           <div className="md:w-3/4">
             <div className="text-center md:text-left">
               <div className="caption">
-                <h2 className="text-xl md:text-4xl font-bold">Hi, I'm Devdeep Patidar.</h2>
+                <h2 className="text-xl md:text-4xl font-bold">Hi, I m Devdeep Patidar.</h2>
                 <h5 className="text-3xl my-4">
                   A <span className={`typing text-teal-600 text-3xl font-semibold ${darkMode ? "brightness-200" : ""}`}></span>
                 </h5>
