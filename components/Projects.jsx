@@ -10,7 +10,7 @@ const Projects = ({}) => {
       id="projects"
       className={` py-20 px-10 md:pl-80  scrollspy ${
         darkMode ? "bg-black text-white" : "bg-white text-gray-900"
-      }`}
+      }`} 
     >
       <h3
         className={` md:pt-10 md:text-8xl text-3xl pb-8 flex items-center justify-center font-semibold  ${
@@ -31,7 +31,7 @@ const Projects = ({}) => {
               width={300}
               height={300}
               className="mb-2 border-solid border-4  border-transparent hover:scale-125	transition ease-in-out hover:border-rose-400"
-            />
+              priority/>
 
             <span
               className={` ${
@@ -63,6 +63,7 @@ const Projects = ({}) => {
                   width={330}
                   height={300}
                   className=" mb-2 border-solid border-4 border-transparent hover:scale-125	 transition ease-in-out hover:border-rose-400"
+                  priority
                 />
               </div>
               <div className="">
@@ -100,7 +101,7 @@ const Projects = ({}) => {
                 width={330}
                 height={300}
                 className="mb-2 border-solid border-4 border-transparent hover:scale-125	 transition ease-in-out hover:border-rose-400"
-              />
+                priority/>
             </div>
 
             <div className="card-content">
@@ -139,7 +140,7 @@ const Projects = ({}) => {
                 width={330}
                 height={300}
                 className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
-              />
+                priority/>
             </div>
             <div className="">
               <span
@@ -172,7 +173,7 @@ const Projects = ({}) => {
                 width={330}
                 height={300}
                 className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
-              />
+                priority />
             </div>
             <div className="">
               <span
@@ -208,7 +209,7 @@ const Projects = ({}) => {
                 width={330}
                 height={300}
                 className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
-              />
+                priority/>
             </div>
             <div className="card-content">
               <span

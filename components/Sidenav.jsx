@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 
 
@@ -49,8 +49,10 @@ const Sidebar = ({ profilePicUrl  }) => {
 
     <nav className={` fixed top-0 ${darkMode ? ' bg-teal-700' : 'bg-gray-500'} w-64 min-h-screen py-4 px-10`}>
       <div className={`flex items-center justify-center`}>
-        <div className=" mr-2">
-          <Image  src={profilePicUrl} className="rounded" alt="Devdeep" width={200} height={200} priority />
+        <div className=" mr-2 py-8 ">
+          <Link href={"http://linkedin.com/in/devdeep-patidar"} target='_blank'>
+          <Image  src={profilePicUrl} className={`rounded-full border-8 hover:scale-110	transition ease-in-out cursor-pointer `} alt="Devdeep" width={200} height={200} priority />
+          </Link>
         </div>
         
       </div>
@@ -59,42 +61,38 @@ const Sidebar = ({ profilePicUrl  }) => {
       <ul className="mt-4">
         <li>
           
-            <a href='#Home' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'Home' ? 'bg-gray-700' : ''}`}>Home</a>
+            <a href='#Home' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'Home' ? 'bg-gray-700' : ''}`}>Home</a>
          
         </li>
         <li>
           
-            <a href='#about' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'about' ? 'bg-gray-700' : ''}`}>About</a>
+            <a href='#about' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'about' ? 'bg-gray-700' : ''}`}>About</a>
          
         </li>
         <li>
           
-            <a href='#projects' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'projects' ? 'bg-gray-700' : ''}`}>Projects</a>
+            <a href='#projects' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'projects' ? 'bg-gray-700' : ''}`}>Projects</a>
           
         </li>
         <li>
           
-            <a href='#skills' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'skills' ? 'bg-gray-700' : ''}`}>Skills</a>
+            <a href='#skills' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'skills' ? 'bg-gray-700' : ''}`}>Skills</a>
           
         </li>
         <li>
           
-            <a href='#certificate' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'certificate' ? 'bg-gray-700' : ''}`}>certificate</a>
+            <a href='#certificate' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'certificate' ? 'bg-gray-700' : ''}`}>certificate</a>
           
         </li>
         <li>
           
-            <a href='#education' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'education' ? 'bg-gray-700' : ''}`}>Education</a>
+            <a href='#education' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'education' ? 'bg-gray-700' : ''}`}>Education</a>
           
         </li>
-        <li>
-         
-            <a className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'contact' ? 'bg-gray-700' : ''}`}>Contact</a>
-          
-        </li>
+        
         <li>
           
-            <a href='https://drive.google.com/file/d/1E66NwNM1j06NIpWiNl1OkBvfY_hVD0-t/view?usp=sharing' target='_blank' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'resume' ? 'bg-gray-700' : ''}`}>Resume</a>
+            <a href='https://drive.google.com/file/d/1E66NwNM1j06NIpWiNl1OkBvfY_hVD0-t/view?usp=sharing' target='_blank' className={`block py-2 px-4 text-xl font-medium text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'resume' ? 'bg-gray-700' : ''}`}>My Resume</a>
           
         </li>
       </ul>

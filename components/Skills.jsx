@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useMode } from '@/context/mode';
-
+import Link from 'next/link';
 
 const SkillsSection = (  ) => {
  
@@ -79,10 +79,11 @@ const SkillsSection = (  ) => {
         </div>
       </div>
       <div className={` md:ml-11 md:pl-20 md:py-10 flex justify-evenly ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
-
+<Link className='flex' href={"https://www.linkedin.com/in/devdeep-patidar/details/certifications/"} target='_blank'>
             <CertificateItem src="/Screenshot 2023-10-14 172811.png" text="Introduction of JavaScript by LinkedIn" />
             <CertificateItem src="/Screenshot 2023-10-16 191159.png" text="DeveloperTools by LinkedIn" />
             <CertificateItem src="/Screenshot 2023-10-27 083902.png" text="GitHub  by LinkedIn" />
+</Link>
       </div>
       </section>
       </>
@@ -96,7 +97,7 @@ const CertificateItem = ({ src, text }) => {
       <div className="w-full md:w-1/2 lg:w-1/3">
         <div className="card">
           <div className="px-3" >
-            <Image src={src} alt={text} layout="responsive" width={600} height={400}  className='  '/>
+            <Image src={src} alt={text} layout="responsive" className='hover:scale-125 transition ease-in-out' width={600} height={400}  priority/>
           </div>
           <div className="pl-5 mt-3">
             <span className="card-title teal-text">{text}</span>
@@ -110,7 +111,7 @@ const SkillItem = ({ src, alt, text }) => {
     return (
       <div className=" items-center px-10">
         <div className="relative w-20 h-20 md:w-24 md:h-30  ">
-          <Image src={src} alt={alt} layout="fill" objectFit="contain" className="rounded cursor-pointer hover:scale-125 transition ease-in-out bg-white" />
+          <Image src={src} alt={alt} layout="fill" objectFit="contain" className="rounded cursor-pointer hover:scale-125 transition ease-in-out bg-white" priority/>
         </div>
         <p className=" text-sm mt-5">{text}</p>
       </div>

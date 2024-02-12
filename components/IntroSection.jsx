@@ -69,11 +69,11 @@ const IntroSection = () => {
               </div>
               <div className="mt-4">
                 <Link href="#about"
-                  className={`mx-2 inline-block py-3 px-8 text-${darkMode ? 'white' : 'black'} border-2 border-black font-semibold text-sm rounded-full hover:bg-${darkMode ? 'white' : 'black'} hover:text-teal-500 hover:brightness-125 transition duration-300`}>
+                  className={`mx-2 inline-block py-3 px-8 text-${darkMode ? 'white' : 'black'} border-2 ${darkMode ? " hover:border-white" : ""} border-black font-semibold text-sm rounded-full hover:bg-${darkMode ? 'white ' : 'black'} hover:text-teal-500 hover:brightness-125 transition duration-300`}>
                   Read More
                 </Link>
-                <Link href="#contact"
-                  className={`inline-block py-3 px-8 text-${darkMode ? 'white' : 'black'} border-2 border-black font-semibold text-sm rounded-full hover:bg-${darkMode ? 'white' : 'black'} hover:text-teal-500 hover:brightness-125 transition duration-300`}>
+                <Link href="http://linkedin.com/in/devdeep-patidar"
+                  className={`inline-block py-3 px-8 text-${darkMode ? 'white' : 'black'} border-2 border-black font-semibold text-sm rounded-full hover:bg-${darkMode ? 'white' : 'black'} ${darkMode ? " hover:border-white" : ""} hover:text-teal-500 hover:brightness-125 transition duration-300`}>
                   Contact Me
                 </Link>
               </div>
