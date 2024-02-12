@@ -9,7 +9,7 @@ const About = ({  }) => {
   return (
     <section  
       id="about"
-      className={ `scrollspy  pt-32  md:pl-60 md:ml-20 md:pb-1 pb-8 ${
+      className={ `scrollspy px-5 pt-32  md:pl-60 md:ml-20 md:pb-1 pb-8 ${
         darkMode ? 'bg-black text-white' : ' text-gray-800'
       }`}
     >

@@ -97,7 +97,7 @@ const CertificateItem = ({ src, text }) => {
       <div className="w-full md:w-1/2 lg:w-1/3">
         <div className="card">
           <div className="px-3" >
-            <Image src={src} alt={text} layout="responsive" className='hover:scale-125 transition ease-in-out' width={600} height={400}  priority/>
+            <Image src={src} alt={text} layout="responsive" className=' md:hover:scale-125 transition ease-in-out' width={600} height={400}  priority/>
           </div>
           <div className="pl-5 mt-3">
             <span className="card-title teal-text">{text}</span>

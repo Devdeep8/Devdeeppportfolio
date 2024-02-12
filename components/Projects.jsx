@@ -8,7 +8,7 @@ const Projects = ({}) => {
   return (
     <section
       id="projects"
-      className={` py-20 px-10 md:pl-80  scrollspy ${
+      className={` py-28 px-10 md:pl-80  scrollspy ${
         darkMode ? "bg-black text-white" : "bg-white text-gray-900"
       }`} 
     >
@@ -148,7 +148,7 @@ const Projects = ({}) => {
                   darkMode ? " text-teal-500 brightness-150" : ""
                 } hover:underline`}
               >
-                Contact Management App
+                Contact  App
               </span>
               <p className={` ${darkMode ? "text-white" : ""}`}>
                 My First Nextjs App with mysql .
@@ -184,7 +184,7 @@ const Projects = ({}) => {
                 Login Signup Form
               </span>
               <p className={`${darkMode ? "text-white" : ""}`}>
-                Nextjs App with Database MongoDb
+                Nextjs App with  MongoDb
               </p>
             </div>
             <div
