@@ -14,7 +14,7 @@ import { useMode } from '@/context/mode';
 const Sidebar = ({ profilePicUrl  }) => {
   ;
   const [activeLink, setActiveLink] = useState(true);
-  const { darkMode , toggleDarkMode  } = useMode(); 
+  const { darkMode   } = useMode(); 
 
   
 
@@ -50,7 +50,7 @@ const Sidebar = ({ profilePicUrl  }) => {
     <nav className={` fixed top-0 ${darkMode ? ' bg-teal-700' : 'bg-gray-500'} w-64 min-h-screen py-4 px-10`}>
       <div className={`flex items-center justify-center`}>
         <div className=" mr-2">
-          <Image  src={profilePicUrl} className="rounded" alt="avatar" width={200} height={200} priority />
+          <Image  src={profilePicUrl} className="rounded" alt="Devdeep" width={200} height={200} priority />
         </div>
         
       </div>
