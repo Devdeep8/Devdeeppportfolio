@@ -10,16 +10,16 @@ const SkillsSection = (  ) => {
 
     return (
       <>
-    <section id="skills" className={` h-screen md:ml-10 overflow-hidden md:overflow-visible md:pt-32 md:pl-44  section scrollspy ${ darkMode ? 'bg-black text-white' : 'bg-white text-gray-800'}`}>
+    <section id="skills" className={`  md:pt-32 md:pl-44  section scrollspy ${ darkMode ? 'bg-black text-white' : 'bg-white text-gray-800'}`}>
       <h3 className={`flex justify-center pb-8 text-2xl text-semibold md:text-7xl font-semibold ${darkMode ? 'text-teal-500 brightness-150' :''} ${ darkMode ? '' : ''}`}>Skills</h3>
       
         
       <div className="container grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
         {/* Languages and Databases */} 
-        <div className={` pt-8  ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+        <div className={` pt-8 md:pl-9 ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-900'}`}>
           <div className="card-content">
             <h4 className={` flex justify-center pb-8 text-2xl text-semibold ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Languages</h4>
-            <div className="flex flex-wrap justify-evenly">
+            <div className="flex flex-wrap gap-5 md:gap-0 justify-evenly">
               <SkillItem src="/js.png" alt="JavaScript" text="JavaScript" />
               <SkillItem src="/python-logo-1-300x300.jpg" alt="Python" text="Python" />
               <SkillItem src="/html5-300x300.jpg" alt="HTML5" text="HTML5" />
@@ -32,7 +32,7 @@ const SkillsSection = (  ) => {
       <div className={` pt-24 ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Frameworks</h4>
-            <div className="flex flex-wrap justify-evenly">
+            <div className="flex flex-wrap justify-evenly gap-5">
               <SkillItem src="/express-js.png" alt="React" text="React" />
               <SkillItem src="/next-js_1.png" alt="Nextjs" text="Nextjs" />
               <SkillItem src="/bootstrap.png" alt="Bootstrap" text="Bootstrap" />
@@ -55,7 +55,7 @@ const SkillsSection = (  ) => {
          <div className={` pt-24 card ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Others</h4>
-            <div className="flex flex-wrap justify-evenly">
+            <div className="flex flex-wrap justify-evenly gap-5">
               <SkillItem src="/node-js-logo-png.png" alt="Nodejs" text="Nodejs" />
               <SkillItem src="/git.png" alt="Git" text="Git" />
               <SkillItem src="/wordpress.png" alt="WordPress" text="WordPress" />
@@ -66,7 +66,7 @@ const SkillsSection = (  ) => {
         
       
       </section>
-      <section id="certificate" className={` md:mt-80 md:pl-40 md:pt-80 md:pb-52 pb-20 scrollspy ${ darkMode ? 'bg-black text-white' : 'bg-white text-gray-800'}`}>
+      <section id="certificate" className={`  md:pl-40 md:pt-28 pt-20 md:pb-52 pb-20 scrollspy ${ darkMode ? 'bg-black text-white' : 'bg-white text-gray-800'}`}>
         <h3 className={`flex justify-center pb-8 text-2xl text-semibold md:text-7xl font-semibold ${darkMode ? 'text-teal-500 brightness-150' :''} ${ darkMode ? '' : ''}`}>Certificate</h3>
       <div className="container grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
         {/* Languages and Databases */} 

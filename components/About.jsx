@@ -9,8 +9,8 @@ const About = ({  }) => {
   return (
     <section  
       id="about"
-      className={ `scrollspy  pt-32 h-screen  md:pl-60 md:ml-20 md:pb-1 pb-8 ${
-        darkMode ? 'bg-black text-white' : 'bg-gray-100 text-gray-800'
+      className={ `scrollspy  pt-32  md:pl-60 md:ml-20 md:pb-1 pb-8 ${
+        darkMode ? 'bg-black text-white' : ' text-gray-800'
       }`}
     >
       <h3 className={` flex justify-center text-teal-500 md:text-8xl text-4xl p-5 font-bold ${darkMode ? " brightness-150" : ""}`}>About</h3>

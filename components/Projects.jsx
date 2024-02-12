@@ -8,7 +8,7 @@ const Projects = ({}) => {
   return (
     <section
       id="projects"
-      className={`  h-screen overflow-hidden md:overflow-visible px-10 md:pl-80  scrollspy ${
+      className={` py-20 px-10 md:pl-80  scrollspy ${
         darkMode ? "bg-black text-white" : "bg-white text-gray-900"
       }`}
     >

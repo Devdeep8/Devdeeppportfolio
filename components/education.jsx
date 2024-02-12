@@ -1,5 +1,5 @@
 'use client'
-
+import Link from "next/link";
 import { useMode } from "@/context/mode";
 
 const EducationSection = () => {
@@ -15,6 +15,7 @@ const EducationSection = () => {
           <ExperienceItem
             name="Calanjiyam Consultancies & Technologies"
             link = "#certificate"
+            resume = 'My Resume'
             location="Tamil Nadu, India"
             Position="WordPress Developer Intern"
             Time =  "Sept 2023 - Nov 2023"
@@ -72,13 +73,18 @@ const EducationItem = ({ name, link, location, degree, graduationYear, grade, da
     </div>
   );
 };
-const ExperienceItem = ({ name, link, location, Position, Time, darkMode }) => {
+const ExperienceItem = ({ name, link,resume ,location, Position, Time, darkMode }) => {
   return (
     <div className={` py-10 px-8 card ${darkMode ? 'bg-black' : ' bg-gray-200'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
       <div className="card-content">
         <p>
           <span className={`card-title ${darkMode ? 'teal-text' : 'text-teal'} ${darkMode ? 'hoverline' : ''}`}>
             <a href={link}  className={darkMode ? 'hoverline' : ''}><strong>
+            
+           
+            
+          
+    
               {name}
 
             </strong>
@@ -92,7 +98,13 @@ const ExperienceItem = ({ name, link, location, Position, Time, darkMode }) => {
           <b>time :  </b>{Time}
         </p>
       </div>
+      <strong>
+        <Link href={'https://drive.google.com/file/d/1E66NwNM1j06NIpWiNl1OkBvfY_hVD0-t/view?usp=sharing' } target='_blank' className={`block py-2 px-4 text-${darkMode ? 'white' : 'gray-300'} `} >{resume} </Link>
+        
+        </strong>
     </div>
+
+    
   );
 };
 
