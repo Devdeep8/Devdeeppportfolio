@@ -22,7 +22,7 @@ const toggleDarkMode = () => {
 <ModeProvider value={{darkMode , toggleDarkMode}}>
 
 <div className=" overflow-hidden">
-      <Sidenav profilePicUrl={'/profile.jpg' }  />
+      <Sidenav profilePicUrl={'/dev.jpg' }  />
    
       <div className="flex-1  ">
         <IntroSection   />
