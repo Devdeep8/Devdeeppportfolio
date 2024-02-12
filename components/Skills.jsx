@@ -33,7 +33,7 @@ const SkillsSection = (  ) => {
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Frameworks</h4>
             <div className="flex flex-wrap justify-evenly gap-5">
-              <SkillItem src="/express-js.png" alt="React" text="React" />
+              <SkillItem src="/expressjs.png" alt="React" text="React" />
               <SkillItem src="/next-js_1.png" alt="Nextjs" text="Nextjs" />
               <SkillItem src="/bootstrap.png" alt="Bootstrap" text="Bootstrap" />
               <SkillItem src="/talwind.jpg" alt="Tailwind" text="Tailwind" />
