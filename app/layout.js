@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,6 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -27,7 +29,10 @@ export default function RootLayout({ children }) {
         
       </link>
       <link rel="manifest" href="/site.webmanifest"></link>
+      
+      </head>
       <body className={poppins.className}>{children}</body>
+      <Analytics />
     </html>
   );
 }
