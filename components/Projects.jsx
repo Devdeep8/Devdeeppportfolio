@@ -72,7 +72,7 @@ const Projects = ({}) => {
                     darkMode ? "text-teal-500 brightness-150" : ""
                   } hover:underline `}
                 >
-                  A thal For Reason
+                  A thala For Reason
                 </span>
                 <p className={`${darkMode ? "text-white" : ""}`}>
                   First React App
@@ -107,7 +107,7 @@ const Projects = ({}) => {
             <div className="card-content">
               <span
                 className={` ${
-                  darkMode ? "text-teal-500" : ""
+                  darkMode ? "text-teal-500 brightness-150" : ""
                 } hover:underline`}
               >
                 Memes Genrator
@@ -162,7 +162,7 @@ const Projects = ({}) => {
 
         <Link
           target="_blank"
-          href={"https://github.com/Devdeep8/thalaforreason"}
+          href={"https://passwordchange.vercel.app/"}
           className=" "
         >
           <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
@@ -181,10 +181,10 @@ const Projects = ({}) => {
                   darkMode ? "text-teal-500 brightness-150" : ""
                 } hover:underline `}
               >
-                Login Signup Form
+                Password Generator
               </span>
               <p className={`${darkMode ? "text-white" : ""}`}>
-                Nextjs App with  MongoDb
+                Web App 
               </p>
             </div>
             <div
@@ -199,7 +199,7 @@ const Projects = ({}) => {
 
         <Link
           target="_blank"
-          href={"https://github.com/Devdeep8/currencyconertor"}
+          href={"https://currencyconertor.vercel.app/"}
         >
           <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
             <div className="card-image waves-effect waves-block waves-light">
@@ -214,7 +214,7 @@ const Projects = ({}) => {
             <div className="card-content">
               <span
                 className={` ${
-                  darkMode ? "text-teal-500" : ""
+                  darkMode ? "text-teal-500 brightness-150" : ""
                 } hover:underline`}
               >
                 Currency Convertor

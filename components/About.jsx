@@ -22,7 +22,7 @@ const About = ({  }) => {
           I am a Computer Science 1st-year Student at IPS Academy Indore. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
         </p>
         <p>
-          I have worked on technologies like  NextJS, React, Veu, HTML5, CSS, JavaScript currently. I have created many Projects which helped me strengthen my experience in Python, Flask, and Django.
+          I have worked on technologies like  NextJS, React, Veu, HTML5, CSS, JavaScript currently. I have created many Projects which helped me strengthen my experience in Javascript, NextJS, and Nodejs.
         </p>
         <p>
           I am passionate about developing complex applications that solve real-world problems impacting millions of users.
@@ -31,7 +31,7 @@ const About = ({  }) => {
           <li className=' p-1'><b>Languages:</b> JavaScript, HTML/CSS </li>
           <li className=' p-1'><b>Databases:</b> MySQL, MongoDB , Postgrsql</li>
           <li className=' p-1'><b>Frameworks:</b> Nextjs, React, Bootstrap, Tailwind </li>
-          <li className=' p-1'><b>Tools & Technologies:</b> Git, linux</li>
+          <li className=' p-1'><b>Tools & Technologies:</b> Git, Docker</li>
         </ul>
         <p className=' font-medium'>
           Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences, and personal growth.
