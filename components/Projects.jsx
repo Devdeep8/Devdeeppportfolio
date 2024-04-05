@@ -52,7 +52,7 @@ const Projects = ({}) => {
         <div>
           <Link
             target="_blank"
-            href={"https://github.com/Devdeep8/thalaforreason"}
+            href={"https://thalaforreason-sandy.vercel.app/"}
             className=" "
           >
             <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
