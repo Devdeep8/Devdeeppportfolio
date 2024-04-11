@@ -130,7 +130,7 @@ const Projects = ({}) => {
       <div className="grid grid-cols-3 gap-8 pt-10">
         <Link
           target="_blank"
-          href={"https://github.com/Devdeep8/nextgetmethod"}
+          href={"https://todos-devdeep8.vercel.app/"}
         >
           <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
             <div className="">
@@ -148,10 +148,10 @@ const Projects = ({}) => {
                   darkMode ? " text-teal-500 brightness-150" : ""
                 } hover:underline`}
               >
-                Contact  App
+                Todo APP
               </span>
               <p className={` ${darkMode ? "text-white" : ""}`}>
-                My First Nextjs App with mysql .
+                My favorite Project
               </p>
             </div>
             <div className={`${darkMode ? " text-white" : "bg-white"}`}>
