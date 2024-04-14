@@ -18,6 +18,7 @@ const Sidebar = ({ profilePicUrl  }) => {
   const { darkMode , toggleDarkMode  } = useMode(); 
   const [isOpen, setIsOpen] = useState(false);
   
+  // console.log(darkMode);
 
   useEffect(() => { 
     const handleScroll = () => {
@@ -58,7 +59,7 @@ const Sidebar = ({ profilePicUrl  }) => {
           >
             <path
               strokeLinecap='round'
-              strokeLinejoin='round'
+              strokeLinejoin='round'  
               strokeWidth={2}
               d='M4 6h16M4 12h16m-7 6h7'
             />
@@ -80,7 +81,7 @@ const Sidebar = ({ profilePicUrl  }) => {
           </label>
         </div>
       </div>
-
+     {/* mobile Navbar */}
       <nav
         className={`${
           isOpen ? 'transition ease-in-out transform translate-x-0' : 'transition ease-in-out transform -translate-x-full'
@@ -91,7 +92,7 @@ const Sidebar = ({ profilePicUrl  }) => {
             <Link href={'http://linkedin.com/in/devdeep-patidar'} target='_blank'>
               <Image
                 src={profilePicUrl}
-                className={`mb-5 rounded-full border hover:scale-110 transition ease-in-out cursor-pointer`}
+                className={`rounded-full  hover:scale-110 transition ease-in-out cursor-pointer`}
                 alt='Devdeep'
                 width={200}
                 height={100}
@@ -115,9 +116,9 @@ const Sidebar = ({ profilePicUrl  }) => {
           <li>
             <a
               href='#about'
-              className={`block py-2 text-xl font-medium px-4 text-${
+              className={`block py-2 text-xl  font-medium px-4 text-${
                 darkMode ? 'white' : 'gray-300'
-              } hover:bg-gray-700 ${activeLink === 'about' ? 'bg-gray-700' : ''}`}
+              } hover:bg-gray-700 ${activeLink === 'about' ? 'bg-gray-700 ' : ''}`}
             >
               About
             </a>
@@ -186,11 +187,11 @@ const Sidebar = ({ profilePicUrl  }) => {
     </div>
     <div className={` hidden md:block`}>
 
-    <nav className={` fixed top-0 ${darkMode ? ' bg-teal-700' : 'bg-gray-500'} w-64 min-h-screen py-4 px-10`}>
+    <nav className={` fixed top-0 ${darkMode ? 'bg-gradient-to-r from-teal-500 to-cyan-400' : 'bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100'} w-64 min-h-screen text-center`}>
       <div className={`flex items-center justify-center`}>
         <div className=" mr-2 py-8 ">
           <Link href={"http://linkedin.com/in/devdeep-patidar"} target='_blank'>
-          <Image  src={profilePicUrl} className={`rounded-full border-8 hover:scale-110	transition ease-in-out cursor-pointer `} alt="Devdeep" width={200} height={200} priority />
+          <Image  src={profilePicUrl} className={`rounded-full hover:scale-110 z-10 transition ease-in-out cursor-pointer `} alt="Devdeep" width={200} height={200} priority />
           </Link>
         </div>
         
@@ -200,38 +201,38 @@ const Sidebar = ({ profilePicUrl  }) => {
       <ul className="mt-4">
         <li>
           
-            <a href='#Home' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'Home' ? 'bg-gray-700' : ''}`}>Home</a>
+            <a href='#Home' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'Home' ? 'bg-gray-700 text-white scale-110' : ''}`}>Home</a>
          
         </li>
         <li>
           
-            <a href='#about' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'about' ? 'bg-gray-700' : ''}`}>About</a>
+            <a href='#about' className={`block py-2 text-xl   font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'about' ? 'bg-gray-700 scale-110 text-white' : ''}`}>About</a>
          
         </li>
         <li>
           
-            <a href='#projects' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'projects' ? 'bg-gray-700' : ''}`}>Projects</a>
+            <a href='#projects' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'projects' ? 'bg-gray-700 scale-110 text-white' : ''}`}>Projects</a>
           
         </li>
         <li>
           
-            <a href='#skills' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'skills' ? 'bg-gray-700' : ''}`}>Skills</a>
+            <a href='#skills' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'skills' ? 'bg-gray-700 scale-110 text-white' : ''}`}>Skills</a>
           
         </li>
         <li>
           
-            <a href='#certificate' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'certificate' ? 'bg-gray-700' : ''}`}>certificate</a>
+            <a href='#certificate' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'certificate' ? 'bg-gray-700 scale-110 text-white' : ''}`}>certificate</a>
           
         </li>
         <li>
           
-            <a href='#education' className={`block py-2 text-xl font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'education' ? 'bg-gray-700' : ''}`}>Education</a>
+            <a href='#education' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'education' ? 'bg-gray-700 scale-110 text-white' : ''}`}>Education</a>
           
         </li>
         
         <li>
           
-            <a href='https://drive.google.com/file/d/1E66NwNM1j06NIpWiNl1OkBvfY_hVD0-t/view?usp=sharing' target='_blank' className={`block py-2 px-4 text-xl font-medium text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 ${activeLink === 'resume' ? 'bg-gray-700' : ''}`}>My Resume</a>
+            <a href='https://drive.google.com/file/d/1E66NwNM1j06NIpWiNl1OkBvfY_hVD0-t/view?usp=sharing' target='_blank' className={`block py-2 px-4 text-xl  font-medium text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out hover:text-white ${activeLink === 'resume' ? 'bg-gray-700 text-white' : ''}`}>My Resume</a>
           
         </li>
       </ul>

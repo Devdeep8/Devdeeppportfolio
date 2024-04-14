@@ -11,7 +11,7 @@ const SkillsSection = (  ) => {
     return (
       <>
     <section id="skills" className={`  md:pt-32 md:pl-44  section scrollspy ${ darkMode ? 'bg-black text-white' : 'bg-white text-gray-800'}`}>
-      <h3 className={`flex justify-center pb-8 text-2xl text-semibold md:text-7xl font-semibold ${darkMode ? 'text-teal-500 brightness-150' :''} ${ darkMode ? '' : ''}`}>Skills</h3>
+      <h3 className={`flex justify-center pb-8 text-2xl text-teal-500 text-semibold md:text-7xl  font-semibold ${darkMode ? 'text-teal-500 brightness-150' :''} ${ darkMode ? '' : ''}`}>Skills</h3>
       
         
       <div className="container grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
@@ -111,7 +111,7 @@ const SkillItem = ({ src, alt, text }) => {
     return (
       <div className=" items-center px-10">
         <div className="relative w-20 h-20 md:w-24 md:h-30  ">
-          <Image src={src} alt={alt} layout="fill" objectFit="contain" className="rounded cursor-pointer hover:scale-125 transition ease-in-out bg-white" priority/>
+          <Image src={src} alt={alt} layout="fill" objectFit="contain" className="rounded cursor-pointer aspect-auto bg-white" priority/>
         </div>
         <p className=" text-sm mt-5">{text}</p>
       </div>
