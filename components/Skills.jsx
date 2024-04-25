@@ -21,10 +21,10 @@ const SkillsSection = (  ) => {
             <h4 className={` flex justify-center pb-8 text-2xl text-semibold ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Languages</h4>
             <div className="flex flex-wrap gap-5 md:gap-0 justify-evenly">
               <SkillItem src="/js.png" alt="JavaScript" text="JavaScript" />
-              <SkillItem src="/python-logo-1-300x300.jpg" alt="Python" text="Python" />
+              <SkillItem src="/ts.png" alt="Python" text="TypeScript" />
               <SkillItem src="/html5-300x300.jpg" alt="HTML5" text="HTML5" />
               <SkillItem src="/css3-300x300.jpg" alt="CSS3" text="CSS3" />
-              <SkillItem src="/clanguage.jpg" alt="C language" text="C language" /> 
+              {/* <SkillItem src="/clanguage.jpg" alt="C language" text="C language" />  */}
             </div>
           </div>
         </div>
@@ -33,8 +33,8 @@ const SkillsSection = (  ) => {
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Frameworks</h4>
             <div className="flex flex-wrap justify-evenly gap-5">
-              <SkillItem src="/expressjs.png" alt="React" text="React" />
-              <SkillItem src="/next-js_1.png" alt="Nextjs" text="Nextjs" />
+              <SkillItem src="/expressjs.png" alt="React" text="ExpressJs" className="bg-white rounded-full" />
+              <SkillItem src="/next-js_1.png" alt="Nextjs" text="NextJs" className="bg-white rounded-full" />
               <SkillItem src="/bootstrap.png" alt="Bootstrap" text="Bootstrap" />
               <SkillItem src="/talwind.jpg" alt="Tailwind" text="Tailwind" />
             </div>
@@ -55,11 +55,11 @@ const SkillsSection = (  ) => {
          <div className={` pt-24 card ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Others</h4>
-            <div className="flex flex-wrap justify-evenly gap-5">
-              <SkillItem src="/node-js-logo-png.png" alt="Nodejs" text="Nodejs" />
+            <div className="flex flex-wrap justify-evenly gap-5 ">
+              <SkillItem src="/node-js-logo-png.png" alt="Nodejs" text="NodeJs" />
               <SkillItem src="/git.png" alt="Git" text="Git" />
               <SkillItem src="/wordpress.png" alt="WordPress" text="WordPress" />
-              <SkillItem src="/GitHub-PNG.png" alt="Github" text="GitHub" />
+              <SkillItem src="/GitHub-PNG.png" alt="Github" text="GitHub" className="bg-white rounded-full" />
             </div>
           </div>
         </div>
@@ -107,16 +107,18 @@ const CertificateItem = ({ src, text }) => {
     );
   };
 
-const SkillItem = ({ src, alt, text }) => {
-    return (
-      <div className=" items-center px-10">
-        <div className="relative w-20 h-20 md:w-24 md:h-30  ">
-          <Image src={src} alt={alt} layout="fill" objectFit="contain" className="rounded cursor-pointer aspect-auto bg-white" priority/>
-        </div>
-        <p className=" text-sm mt-5">{text}</p>
+const SkillItem = ({ src, alt, text, className }) => {
+  return (
+    <div className={`relative group cursor-pointer transition duration-300 transform hover:scale-105`}>
+      <div className="relative w-24 h-24 rounded-lg overflow-hidden shadow-lg group-hover:ring-4 group-hover:ring-teal-500 transition-all">
+        <Image src={src} alt={alt} layout="fill" objectFit="contain" className={className} />
       </div>
-    );
-  };
+      <div className=" text-center opacity-0 group-hover:opacity-100 transition-opacity">
+        <span className={`text-lg font-semibold text-center bg-teal-500 bg-opacity-0 hover:bg-opacity-100 rounded-full px-3 py-1 transition duration-300`}>{text}</span>
+      </div>
+    </div>
+  );
+};
   
 
 export default SkillsSection;

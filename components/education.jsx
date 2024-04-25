@@ -7,7 +7,7 @@ const EducationSection = () => {
   const { darkMode } = useMode(); 
 
   return (
-    <section id="education" className={` md:pl-60 h-screen md:pt-32 scrollspy ${darkMode ? 'bg-black text-white' : ' text-gray-800'}`}>
+    <section id="education" className={` md:pl-60  md:pt-32 scrollspy ${darkMode ? 'bg-black text-white' : ' text-gray-800'}`}>
        <h3 className={`flex justify-center pb-8 text-2xl text-semibold md:text-5xl font-semibold ${darkMode ? 'text-teal-500 brightness-150' :''} ${ darkMode ? '' : ''}`}>Experience & Education</h3>
       <div className="container">
         <div className=" text-center pb-5">
