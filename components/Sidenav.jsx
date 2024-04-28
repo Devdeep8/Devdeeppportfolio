@@ -155,7 +155,8 @@ const Sidebar = ({ profilePicUrl  }) => {
     <nav className={`px-3 fixed top-0 ${darkMode ? 'bg-gradient-to-r from-pink-500 brightness-110 to-purple-500' : 'bg-gradient-to-b from-gray-200 to-gray-300'} w-64 min-h-screen text-center`}>
     <div className="  mt-4 flex justify-center">
       <Link href="http://linkedin.com/in/devdeep-patidar" target="_blank">
-        <div className='mb-4 card'>
+        
+        <div className='mb-4 card '>
 
           {/* Image with border and hover effect */}
           <Image
@@ -164,7 +165,7 @@ const Sidebar = ({ profilePicUrl  }) => {
             width={100}
             height={100}
             layout="responsive"
-            className='rounded-lg'
+            className='rounded-lg  '
             />
           {/* Animated gradient overlay */}
          

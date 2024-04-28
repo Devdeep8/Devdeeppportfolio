@@ -17,7 +17,6 @@
 
 body {
   min-height: 100vh;
-  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -30,9 +29,8 @@ body {
   background: #191c29;
   width: var(--card-width);
   height: var(--card-height);
-  
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -42,45 +40,48 @@ body {
   font-family: cursive;
 }
 
-.card:hover {
-  color: rgb(15, 255, 195);
-  transition: color 1s;
+
+
+.card:hover:before{
+  animation: spin 2.5s linear infinite;
 }
-.card:hover:before, .card:hover:after {
-  animation: none;
-  opacity: 0;
+
+.card:hover:after {
+  animation: spin 2.5s linear infinite;
 }
 
 
 .card::before {
   content: "";
   width: 104%;
-  height: 102%;
+  height: 105%;
   border-radius: 8px;
   background-image: linear-gradient(
     var(--rotate)
-    , #009cfd, #1f0bff 43%, #abfe4c);
+    , #0b3988 , #00ffa6 , #ff00d0   );
     position: absolute;
     z-index: -1;
-    top: -1%;
+    top: -2%;
     left: -2%;
-    animation: spin 2.5s linear infinite;
+    
+    /* animation: spin 2.5s linear infinite; */
 }
 
 .card::after {
   position: absolute;
   content: "";
   /* top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0; */
+  left: 1;
+  right: 2; */
   transform: scale(0.8);
   /* filter: blur(calc(var(--card-height) / 6)); */
   background-image: linear-gradient(
     var(--rotate)
-    ,#009cfd, #1f0bff 43%, #abfe4c);
+    , #07bbec ,#fb0000 , #bad61b );
+   
     opacity: 1;
   transition: opacity .5s;
-  animation: spin 2.5s linear infinite;
+  /* animation: spin 2.5s linear infinite; */
 }
 
 @keyframes spin {
