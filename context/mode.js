@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 
 export const ModeContext = createContext({
-  darkMode: true,
+  darkMode: false,
   toggleDarkMode: () => {},
 });
 

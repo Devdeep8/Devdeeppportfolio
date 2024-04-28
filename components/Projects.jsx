@@ -79,7 +79,7 @@ const Projects = ({}) => {
                 </p>
               </div>
               <div
-                className={`card-reveal ${
+                className={`-reveal ${
                   darkMode ? "bg-gray-800 text-white" : "bg-white"
                 }`}
               >
@@ -94,7 +94,7 @@ const Projects = ({}) => {
           href={"https://devdeep8.github.io/memegenerator/"}
         >
           <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <div className="card-image waves-effect waves-block waves-light">
+            <div className="-image waves-effect waves-block waves-light">
               <Image
                 alt="django web app"
                 src="/project-library-logo.png"
@@ -104,7 +104,7 @@ const Projects = ({}) => {
                 priority/>
             </div>
 
-            <div className="card-content">
+            <div className="-content">
               <span
                 className={` ${
                   darkMode ? "text-teal-500 brightness-150" : ""
@@ -117,7 +117,7 @@ const Projects = ({}) => {
               </p>
             </div>
             <div
-              className={`card-reveal ${
+              className={`-reveal ${
                 darkMode ? "bg-gray-800 text-white" : "bg-white"
               }`}
             >
@@ -188,7 +188,7 @@ const Projects = ({}) => {
               </p>
             </div>
             <div
-              className={`card-reveal ${
+              className={`-reveal ${
                 darkMode ? "bg-gray-800 text-white" : "bg-white"
               }`}
             >
@@ -202,7 +202,7 @@ const Projects = ({}) => {
           href={"https://currencyconertor.vercel.app/"}
         >
           <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <div className="card-image waves-effect waves-block waves-light">
+            <div className="-image waves-effect waves-block waves-light">
               <Image
                 alt="django web app"
                 src="/project-ml-7.jpg"
@@ -211,7 +211,7 @@ const Projects = ({}) => {
                 className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
                 priority/>
             </div>
-            <div className="card-content">
+            <div className="-content">
               <span
                 className={` ${
                   darkMode ? "text-teal-500 brightness-150" : ""
@@ -224,7 +224,7 @@ const Projects = ({}) => {
               </p>
             </div>
             <div
-              className={`card-reveal ${darkMode ? " text-white" : "bg-white"}`}
+              className={`-reveal ${darkMode ? " text-white" : "bg-white"}`}
             >
               {/* Accomplishments content */}
             </div>

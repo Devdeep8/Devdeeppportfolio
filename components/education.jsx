@@ -52,9 +52,9 @@ const EducationSection = () => {
 const EducationItem = ({ name, link, location, degree, graduationYear, grade, darkMode }) => {
   return (
     <div className={` py-10 px-16 ${darkMode ? 'bg-black' : ' bg-gray-200'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-      <div className="card-content">
+      <div className="-content">
         <p>
-          <span className={`card-title ${darkMode ? 'teal-text' : 'text-teal'} ${darkMode ? 'hoverline' : ''}`}>
+          <span className={`-title ${darkMode ? 'teal-text' : 'text-teal'} ${darkMode ? 'hoverline' : ''}`}>
             <a href={link} target="_blank" className={darkMode ? 'hoverline' : ''}><strong>
               {name}
 
@@ -75,10 +75,10 @@ const EducationItem = ({ name, link, location, degree, graduationYear, grade, da
 };
 const ExperienceItem = ({ name, link,resume ,location, Position, Time, darkMode }) => {
   return (
-    <div className={` py-10 px-8 card ${darkMode ? 'bg-black' : ' bg-gray-200'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-      <div className="card-content">
+    <div className={` py-10 px-8  ${darkMode ? 'bg-black' : ' bg-gray-200'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+      <div className="-content">
         <p>
-          <span className={`card-title ${darkMode ? 'teal-text' : 'text-teal'} ${darkMode ? 'hoverline' : ''}`}>
+          <span className={`-title ${darkMode ? 'teal-text' : 'text-teal'} ${darkMode ? 'hoverline' : ''}`}>
             <a href={link}  className={darkMode ? 'hoverline' : ''}><strong>
             
            

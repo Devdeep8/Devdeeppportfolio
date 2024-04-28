@@ -17,7 +17,7 @@ const SkillsSection = (  ) => {
       <div className="container grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
         {/* Languages and Databases */} 
         <div className={` pt-8 md:pl-9 ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-          <div className="card-content">
+          <div className="">
             <h4 className={` flex justify-center pb-8 text-2xl text-semibold ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Languages</h4>
             <div className="flex flex-wrap gap-5 md:gap-0 justify-evenly">
               <SkillItem src="/js.png" alt="JavaScript" text="JavaScript" />
@@ -42,7 +42,7 @@ const SkillsSection = (  ) => {
         </div>
 
          {/* Databases */}
-         <div className={` pt-24 card ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+         <div className={` pt-24  ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Databases</h4>
             <div className="flex flex-wrap justify-evenly">
@@ -52,7 +52,7 @@ const SkillsSection = (  ) => {
           </div>
         </div>
         
-         <div className={` pt-24 card ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+         <div className={` pt-24  ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           <div className="">
             <h4 className={`flex justify-center pb-8 text-2xl text-semibold  ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>Others</h4>
             <div className="flex flex-wrap justify-evenly gap-5 ">
@@ -71,7 +71,7 @@ const SkillsSection = (  ) => {
       <div className="container grid grid-cols-1 md:grid-cols-1 xl:grid-cols-1">
         {/* Languages and Databases */} 
         <div className={` pt-8  ${darkMode ? 'bg-black' : 'bg-white'} ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-          <div className="card-content">
+          <div className="">
             <div className="flex flex-wrap justify-evenly">
             <CertificateItem src="/Screenshot 2024-02-10 124859.png" text="First Internship Certifigate" />
             </div>
@@ -95,12 +95,12 @@ const CertificateItem = ({ src, text }) => {
     
     return (
       <div className="w-full md:w-1/2 lg:w-1/3">
-        <div className="card">
+        <div className="">
           <div className="px-3" >
             <Image src={src} alt={text} layout="responsive" className=' md:hover:scale-125 transition ease-in-out' width={600} height={400}  priority/>
           </div>
           <div className="pl-5 mt-3">
-            <span className="card-title teal-text">{text}</span>
+            <span className="title teal-text">{text}</span>
           </div>
         </div>
       </div>

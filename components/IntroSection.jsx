@@ -49,10 +49,16 @@ const IntroSection = () => {
           <div className="md:w-3/4">
             <div className="text-center md:text-left">
               <div className="caption">
-                <h2 className="text-2xl md:text-6xl font-bold">Hi, I m Devdeep Patidar.</h2>
+                <div className={`  bg-teal-600  ${darkMode ? "brightness-200" : ""}   text-transparent bg-clip-text  `}> 
+
+                <h2 className={`text-4xl md:text-6xl  font-bold `}>Hi, I m Devdeep Patidar.</h2>
+                </div>
+                <div className={`text-transparent bg-clip-text  ${darkMode ? "bg-gradient-to-r from-pink-500 brightness-110 to-purple-500" : "bg-gradient-to-br from-pink-300 to-purple-400"}`}>
+
                 <h5 className="text-3xl my-4">
-                  A <span className={`typing text-teal-600 text-2xl md:text-5xl font-semibold ${darkMode ? "brightness-200" : ""}`}></span>
+                  <span className=' text-teal-600 brightness-110'>A</span> <span className={`typing text-2xl md:text-5xl font-semibold `}></span>
                 </h5>
+                </div>
                 <p className={`text-xl text-${darkMode ? 'white' : 'black'}`}>
                   Self-driven, quick starter, passionate programmer with a
                   curious mind who enjoys solving complex and challenging

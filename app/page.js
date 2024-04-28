@@ -12,7 +12,7 @@ import { useState } from "react";
 
 
 export default function Home( ) {
-const [darkMode, setDarkMode] = useState(true)
+const [darkMode, setDarkMode] = useState(false)
 
 const toggleDarkMode = () => {
   setDarkMode(prevDarkMode => !prevDarkMode);
@@ -22,7 +22,7 @@ const toggleDarkMode = () => {
 <ModeProvider value={{darkMode , toggleDarkMode}}>
 
 <div className=" overflow-hidden">
-      <Sidenav profilePicUrl={'/dev.jpg' }  />
+      <Sidenav profilePicUrl={'/github.jpg' }  />
    
       <div className="flex-1  ">
         <IntroSection   />
