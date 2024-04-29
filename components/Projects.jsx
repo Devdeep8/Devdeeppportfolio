@@ -3,235 +3,96 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useMode } from "@/context/mode";
+
 const Projects = ({}) => {
   const { darkMode } = useMode();
   return (
     <section
       id="projects"
-      className={` py-28 px-10 md:pl-80  scrollspy ${
+      className={`py-10 md:pl-10 scrollspy ${
         darkMode ? "bg-black text-white" : "bg-white text-gray-900"
-      }`} 
+      }`}
     >
       <h3
-        className={` md:pt-10 md:text-8xl text-3xl pb-8 flex items-center justify-center font-semibold  ${
+        className={`text-3xl md:text-5xl pb-4 flex items-center justify-center font-semibold ${
           darkMode ? "text-teal-500" : "text-teal-500"
-        } ${darkMode ? " brightness-150" : ""}`}
+        } ${darkMode ? "brightness-150" : ""}`}
       >
         Projects
       </h3>
-      <div className="grid grid-cols-3 gap-7">
-        <Link
-          target="_blank"
-          href={"https://devdeep8.github.io/portfolio.first/"}
-        >
-          <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <Image
-              alt="music streaming app"
-              src="/project-music-player.png"
-              width={300}
-              height={300}
-              className="mb-2 border-solid border-4  border-transparent hover:scale-125	transition ease-in-out hover:border-rose-400"
-              priority/>
+      <div className=" md:ml-60 md:mr-2  grid grid-cols-1 md:grid-cols-3 gap-7">
+        <ProjectLink
+          href={"https://machine-six.vercel.app/"}
+          alt={"Stock Management App"}
+          src={"/project-music-player.png"}
+          text={"Stock Management App"}
+          darkMode={darkMode}
+        />
 
-            <span
-              className={` ${
-                darkMode ? " text-teal-500 brightness-150" : ""
-              } hover:underline`}
-            >
-              First Portfolio
-            </span>
-            <p className={` ${darkMode ? "text-white" : ""}`}>
-              My First Website .
-            </p>
-            <div className={`${darkMode ? " text-white" : "bg-white"}`}>
-              {/* Accomplishments content */}
-              sqadw
-            </div>
-          </div>
-        </Link>
-        <div>
-          <Link
-            target="_blank"
-            href={"https://thalaforreason-sandy.vercel.app/"}
-            className=" "
-          >
-            <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-              <div className="">
-                <Image
-                  alt="quiz app"
-                  src="/project-quizup-logo-1.png"
-                  width={330}
-                  height={300}
-                  className=" mb-2 border-solid border-4 border-transparent hover:scale-125	 transition ease-in-out hover:border-rose-400"
-                  priority
-                />
-              </div>
-              <div className="">
-                <span
-                  className={` ${
-                    darkMode ? "text-teal-500 brightness-150" : ""
-                  } hover:underline `}
-                >
-                  A thala For Reason
-                </span>
-                <p className={`${darkMode ? "text-white" : ""}`}>
-                  First React App
-                </p>
-              </div>
-              <div
-                className={`-reveal ${
-                  darkMode ? "bg-gray-800 text-white" : "bg-white"
-                }`}
-              >
-                {/* Accomplishments content */}
-              </div>
-            </div>
-          </Link>
-        </div>
+        <ProjectLink
+          href={"https://thalaforreason-sandy.vercel.app/"}
+          alt={"Thala for Reason"}
+          src={"/project-quizup-logo-1.png"}
+          text={"Thala for Reason"}
+          darkMode={darkMode}
+        />
 
-        <Link
-          target="_blank"
+        <ProjectLink
           href={"https://devdeep8.github.io/memegenerator/"}
-        >
-          <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <div className="-image waves-effect waves-block waves-light">
-              <Image
-                alt="django web app"
-                src="/project-library-logo.png"
-                width={330}
-                height={300}
-                className="mb-2 border-solid border-4 border-transparent hover:scale-125	 transition ease-in-out hover:border-rose-400"
-                priority/>
-            </div>
+          alt={"Memegenerator"}
+          src={"/project-library-logo.png"}
+          text={"Memegenerator"}
+          darkMode={darkMode}
+        />
 
-            <div className="-content">
-              <span
-                className={` ${
-                  darkMode ? "text-teal-500 brightness-150" : ""
-                } hover:underline`}
-              >
-                Memes Genrator
-              </span>
-              <p className={`${darkMode ? "text-white" : ""}`}>
-                To Know how API work
-              </p>
-            </div>
-            <div
-              className={`-reveal ${
-                darkMode ? "bg-gray-800 text-white" : "bg-white"
-              }`}
-            >
-              {/* Accomplishments content */}
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="grid grid-cols-3 gap-8 pt-10">
-        <Link
-          target="_blank"
+        <ProjectLink
           href={"https://todos-devdeep8.vercel.app/"}
-        >
-          <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <div className="">
-              <Image
-                alt="music streaming app"
-                src="/project-ai-1.jpg"
-                width={330}
-                height={300}
-                className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
-                priority/>
-            </div>
-            <div className="">
-              <span
-                className={` ${
-                  darkMode ? " text-teal-500 brightness-150" : ""
-                } hover:underline`}
-              >
-                Todo APP
-              </span>
-              <p className={` ${darkMode ? "text-white" : ""}`}>
-                My favorite Project
-              </p>
-            </div>
-            <div className={`${darkMode ? " text-white" : "bg-white"}`}>
-              {/* Accomplishments content */}
-            </div>
-          </div>
-        </Link>
+          alt={"Todo List"}
+          src={"/project-ai-1.jpg"}
+          text={"Todo List"}
+          darkMode={darkMode}
+        />
 
-        <Link
-          target="_blank"
+        <ProjectLink
           href={"https://passwordchange.vercel.app/"}
-          className=" "
-        >
-          <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <div className="">
-              <Image
-                alt="quiz app"
-                src="/project-aim_bert-bias.png"
-                width={330}
-                height={300}
-                className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
-                priority />
-            </div>
-            <div className="">
-              <span
-                className={` ${
-                  darkMode ? "text-teal-500 brightness-150" : ""
-                } hover:underline `}
-              >
-                Password Generator
-              </span>
-              <p className={`${darkMode ? "text-white" : ""}`}>
-                Web App 
-              </p>
-            </div>
-            <div
-              className={`-reveal ${
-                darkMode ? "bg-gray-800 text-white" : "bg-white"
-              }`}
-            >
-              {/* Accomplishments content */}
-            </div>
-          </div>
-        </Link>
+          alt={"Password Generator App"}
+          src={"/project-aim_bert-bias.png"}
+          text={"Password Generator"}
+          darkMode={darkMode}
+        />
 
-        <Link
-          target="_blank"
+        <ProjectLink
           href={"https://currencyconertor.vercel.app/"}
-        >
-          <div className={` ${darkMode ? " text-white" : "bg-white"}`}>
-            <div className="-image waves-effect waves-block waves-light">
-              <Image
-                alt="django web app"
-                src="/project-ml-7.jpg"
-                width={330}
-                height={300}
-                className="mb-2 border-solid border-4 border-transparent hover:scale-125 transition ease-in-out hover:border-rose-400"
-                priority/>
-            </div>
-            <div className="-content">
-              <span
-                className={` ${
-                  darkMode ? "text-teal-500 brightness-150" : ""
-                } hover:underline`}
-              >
-                Currency Convertor
-              </span>
-              <p className={`${darkMode ? "text-white" : ""}`}>
-                First Freelance Work
-              </p>
-            </div>
-            <div
-              className={`-reveal ${darkMode ? " text-white" : "bg-white"}`}
-            >
-              {/* Accomplishments content */}
-            </div>
-          </div>
-        </Link>
+          alt={"Currency Converter"}
+          src={"/project-ml-7.jpg"}
+          text={"Currency Converter"}
+          darkMode={darkMode}
+        />
       </div>
     </section>
+  );
+};
+
+const ProjectLink = ({ href, alt, src, text, darkMode }) => {
+  return (
+    <Link href={href} target="_blank" className="group">
+        <div className="relative my-4 cursor-pointer transition duration-150 ease-in-out transform hover:scale-110">
+          <div className="relative rounded-lg overflow-hidden hover:shadow-2xl transition-all">
+            <Image
+              src={src}
+              alt={alt}
+              layout="responsive"
+              width={330}
+              height={300}
+            />
+          </div>
+          <div className="text-center md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+            <span className={`text-lg font-semibold text-center brightness-150 ${darkMode ? 'bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent' : ''} md:bg-opacity-0 md:hover:bg-opacity-100 rounded-full px-3 py-1 transition duration-300`}>
+              {text}
+            </span>
+          </div>
+        </div>
+    </Link>
   );
 };
 

@@ -85,7 +85,7 @@ const Sidebar = ({ profilePicUrl  }) => {
       <nav
         className={`${
           isOpen ? 'transition ease-in-out transform translate-x-0' : 'transition ease-in-out transform -translate-x-full'
-        } ${darkMode ? 'bg-teal-700' : 'bg-gray-500'} px-5 py-5 z-10 fixed top-8 left-0 w-full`}
+        } ${darkMode ? 'bg-gradient-to-r from-pink-500 brightness-110 to-purple-500' : 'bg-gradient-to-b from-gray-200 to-gray-300'} px-5 py-5 z-10 fixed top-8 left-0 w-full`}
       >
         <div className="  mt-4 flex justify-center">
       <Link href="http://linkedin.com/in/devdeep-patidar" target="_blank">
@@ -199,7 +199,7 @@ const Sidebar = ({ profilePicUrl  }) => {
         </li>
         <li>
           
-            <a href='#certificate' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'certificate' ? 'bg-gray-700 scale-110 text-white border-white border-4 ' : ''}`}>certificate</a>
+            <a href='#certificate' className={`block py-2 text-xl  font-medium px-4 text-${darkMode ? 'white' : 'gray-300'} hover:bg-gray-700 hover:scale-110 transition ease-in-out ${activeLink === 'certificate' ? 'bg-gray-700 scale-110 text-white border-white border-4 ' : ''}`}>Certificate</a>
           
         </li>
         <li>
